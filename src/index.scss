@@ -1,5 +1,6 @@
 // Importing fonts
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swa');
 
 // Variables for light theme
 :root {
@@ -18,7 +19,7 @@
 body {
     background: var(--bg-primary);
     color: var(--text-primary);
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Mukta','Varela Round', sans-serif;
     // Transition for dark mode
     transition: all 0.2s;
 }
