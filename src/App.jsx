@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Menu from './components/Menu/Menu'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function App() {
     <>
       <h1>Kushal Shrestha</h1>
       <h2>Software Engineer</h2>
+      <Menu/>
     </>
   )
 }
