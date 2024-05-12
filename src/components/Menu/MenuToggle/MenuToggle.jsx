@@ -1,10 +1,11 @@
 import React from "react";
 
-function MenuToggle({toggleMenu, menuActive, children}) {
+function MenuToggle({ toggleMenu, menuActive, children }) {
   return (
     <div
       onClick={toggleMenu}
-      className={!menuActive ? "menu-toggle" : "menu-toggle menu-toggle-active"}
+        className={!menuActive ? "menu-toggle" : "menu-toggle menu-toggle-active"}
+      // className="menu-toggle"
     >
       <span className="menu-text">{children}</span>
       <div className="menu-burger">

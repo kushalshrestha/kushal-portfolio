@@ -1,15 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Menu from './components/Menu/Menu'
+import TopSection from './sections/TopSection/TopSection';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  useEffect(() => {
+    const theme = localStorage.getItem('theme')
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode')
+    }
+  }, [])  
   return (
     <>
-      <h1>Kushal Shrestha</h1>
-      <h2>Software Engineer</h2>
       <Menu/>
+      <TopSection/>
     </>
   )
 }
