@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./Menu.scss";
 import MenuItem from "./MenuItem/MenuItem";
 import MenuToggle from "./MenuToggle/MenuToggle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLaptop, faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Menu() {
   const [menuActive, setMenuActive] = useState(false);
@@ -11,7 +15,7 @@ function Menu() {
 
   const menuItems = [
     {
-      icon: "fa fa-adjust",
+      icon: <FontAwesomeIcon icon={faLaptop} />,
       tooltip: "Toggle theme",
       action: () => {
         document.body.classList.toggle("dark-mode");
@@ -23,7 +27,7 @@ function Menu() {
       },
     },
     {
-      icon: "fa fa-github",
+      icon: <FontAwesomeIcon icon={faLaptop} />,
       tooltip: "My GitHub",
       action: () => {
         window.open("https://github.com/kushalshrestha");

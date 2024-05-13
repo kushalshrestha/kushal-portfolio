@@ -25,12 +25,50 @@
 
     .profile-image {
         text-align: left;
-        width: 50%; // Change width to 50% to make it half the width
+        width: 60%; // Change width to 50% to make it half the width
         padding-left: 2em; // Adjust padding
 
         img {
             max-width: 100%; // Make the image responsive
             height: auto; // Maintain aspect ratio
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .top-section {
+
+        .intro {
+            width: 50%;
+
+            h1 {
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+
+        .intro {
+            text-align: center;
+            border-bottom: 1px solid var(--text-primary);
+            border-right: none;
+            width: auto;
+            padding: 0;
+            padding-bottom: 2em;
+
+            h1 {
+               font-size: 5rem;
+            }
+        }
+
+        .profile-image {
+            height: 40%;
+            padding: 0;
+            padding-top: 2em;
         }
     }
 }

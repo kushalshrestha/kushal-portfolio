@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Menu from './components/Menu/Menu'
 import TopSection from './sections/TopSection/TopSection';
+import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
     <>
       <Menu/>
       <TopSection/>
+      <ProjectsSection/>
     </>
   )
 }

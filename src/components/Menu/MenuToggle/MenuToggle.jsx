@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 
 function MenuToggle({ toggleMenu, menuActive, children }) {
   return (
@@ -9,9 +12,7 @@ function MenuToggle({ toggleMenu, menuActive, children }) {
     >
       <span className="menu-text">{children}</span>
       <div className="menu-burger">
-        <span className="menu-burger-bar"></span>
-        <span className="menu-burger-bar"></span>
-        <span className="menu-burger-bar"></span>
+      <FontAwesomeIcon icon={faBars} />
       </div>
     </div>
   );
