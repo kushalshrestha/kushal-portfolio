@@ -18,7 +18,7 @@ function TopSection() {
           <p>Software Developer</p>
         </div>
         <div className="profile-image">
-            <img src={KushalImage} alt="ProfileImage" style={{ maxWidth: "50%" }} />
+            {/* <img src={KushalImage} alt="ProfileImage" style={{ maxWidth: "50%" }} /> */}
         </div>
       </div>
     </>

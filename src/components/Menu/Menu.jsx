@@ -38,7 +38,6 @@ function Menu() {
   return (
     <div className={menuActive ? "menu menu-active" : "menu"}>
       <MenuToggle toggleMenu={toggleMenu} menuActive={menuActive}>
-        MENU
       </MenuToggle>
       {menuItems.map((menuItem, index) => {
         let angle = -80;
